@@ -109,5 +109,3 @@ So you've shared code online, but it's still not in the master branch. The maste
 ## That's that!
 I know it looks a bit daunting, but once you get used to it it becomes really easy and intuitive. When we start to make more complicated stuff, you'll start to get an idea of why this is so useful and why it's used in industry all the time.
 
-
-

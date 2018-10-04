@@ -1,3 +1,10 @@
+# Ignore compiled files
+testcase
+testcase.exe
+
+# OS files
+*.swp
+
 # Prerequisites
 *.d
 
@@ -50,3 +57,4 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+
