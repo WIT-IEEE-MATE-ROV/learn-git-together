@@ -24,7 +24,7 @@ If you're using a GUI tool, find a button that says "clone" and follow those ins
 You now have a copy of the repository on your computer you can work with!
 
 ### Choose a task to solve
-Look at the source code and you'll find "stubs". These are functions that should do something, but aren't done yet. Here's an example:
+Look at the source code, and it seems pretty daunting. Don't worry, we only care about a file called `ourlib.c`: the rest is for setup and testing. Look inside `ourlib.c` and you'll find "stubs". These are functions that should do something, but aren't done yet. Here's an example:
 
 ```
 /**
@@ -40,7 +40,9 @@ int pow(int b, int e) {
 
 Notice the comment up in the top that describes what's supposed to happen here. It's using the JavaDoc format to tell you that this is a function that "Finds a to the b power", that it takes a parameter `b` to be the base, the parameter `e` to be the exponent, and returns b to the e. Right now, it's empty (except for returning 0 to keep the compiler happy).
 
-Your job (if this is your function) is to take this function and make it do what the comment says it does. Once you've found the function you want to work on, let's move the next step!
+Each of these stubs corresponds to a task, found under the 'projects' tab of this repository. 
+
+Your job (if this is your function) is to take this function and make it do what the task says it does. Then, add comments in the format show here to make sure the comments describe what it does, too. Once you've found the function you want to work on, let's move the next step!
 
 ### Claim this task
 You don't want someone to work on the same thing you're working on because one of you could be doing work elsewhere. To keep things coordinated, we'll be using a project board- find it under the "Projects" tab of this repositor when view online. Claim the task by moving the associated card from "To Do" to "In Progress". Be sure to add your name to the card so we know who's working on it!
@@ -76,6 +78,8 @@ That should either 1) compile correctly, or 2) complain about your code being br
 
 ### Test your code
 You could test your code by hand, or we could make your life easier by automating that. I've set it up using a library called `munit`, and automated it thanks to make. Just run `make test`.
+
+You'll see a lot of text that says "[ ERROR ]": That's OK- it's doing that because the test is running, and people haven't written code that satisfies those tests. If your code is working properly, the test that corresponds to your code will not have an error message.
 
 ### Status, Add, and Commit
 If you're using a gui, it should display for you what files have changed and what is/isn't being tracked. You can check that on the command line with `git status`. Either way, you should see that `ourlib.c` isn't being tracked right now. We need to tell Git that that's what we want by adding it to the staging area. This can either be done with 
