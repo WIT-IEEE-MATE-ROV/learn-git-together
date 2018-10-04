@@ -59,3 +59,7 @@ double _div(int x, int y) {
 int _abs(int arg) {
     return 0;
 }
+
+int fakefunction(void) {
+    return 0;
+}
