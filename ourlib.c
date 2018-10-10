@@ -1,18 +1,18 @@
 #include "ourlib.h"
 
 int _min(int a, int b) {
-    if(a > b){
-        return b;
-    }
-    return a;
+    return 0;
 }
 
 int _max(int a, int b) {
-    return 0;
+    if(a>b){
+        return a;
+    }
+    return b;
 }
 
 double _divide(double a, double b) {
-    return 0;
+    return a/b;
 }
 
 double _multiply(double a, double b) {
@@ -60,9 +60,5 @@ double _div(int x, int y) {
 }
 
 int _abs(int arg) {
-    return 0;
-}
-
-int fakefunction(void) {
     return 0;
 }
