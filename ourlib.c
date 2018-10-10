@@ -1,7 +1,10 @@
 #include "ourlib.h"
 
 int _min(int a, int b) {
-    return 0;
+    if(a > b){
+        return b;
+    }
+    return a;
 }
 
 int _max(int a, int b) {
