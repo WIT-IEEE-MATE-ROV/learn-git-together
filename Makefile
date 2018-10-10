@@ -10,6 +10,7 @@ EXTENSION:=
 TEST_ENV:=
 CFLAGS:=
 AGGRESSIVE_WARNINGS=n
+CC:=gcc
 
 ifeq ($(CC),pgcc)
 	CFLAGS+=-c$(CSTD)
